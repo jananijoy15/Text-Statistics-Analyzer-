@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Statistics Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Text Statistics Analyzer</h1>
+        <p class="subtitle">Analyze important statistics from your text</p>
+
+        <textarea id="textInput"
+            placeholder="Enter or paste your text here..."
+            oninput="analyzeText()"></textarea>
+
+        <div class="grid">
+
+            <div class="card">
+                <h2 id="words">0</h2>
+                <p>Words</p>
+            </div>
+
+            <div class="card">
+                <h2 id="characters">0</h2>
+                <p>Characters</p>
+            </div>
+
+            <div class="card">
+                <h2 id="sentences">0</h2>
+                <p>Sentences</p>
+            </div>
+
+            <div class="card">
+                <h2 id="paragraphs">0</h2>
+                <p>Paragraphs</p>
+            </div>
+
+            <div class="card">
+                <h2 id="average">0</h2>
+                <p>Avg. Word Length</p>
+            </div>
+
+            <div class="card">
+                <h2 id="reading">0 min</h2>
+                <p>Reading Time</p>
+            </div>
+
+        </div>
+
+        <div class="result">
+            <h2>Analysis</h2>
+            <p id="message">Start typing to analyze your text.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
